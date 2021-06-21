@@ -1,0 +1,19 @@
+.header {
+  background-color: grey;
+  height: 7rem;
+  grid-column: full-start / full-end;
+  display: flex;
+  align-items: center;
+  &__list {
+    list-style: none;
+    &--left {
+      margin-right: auto;
+    }
+    &--right {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(max-content, 5rem)) 7rem;
+      grid-column-gap: 6rem;
+      align-items: center;
+    }
+  }
+}
