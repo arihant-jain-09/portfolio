@@ -1,11 +1,13 @@
 .header {
-  background-color: grey;
+  background-color: #1f1d2b;
+  color: #ea7c69;
   height: 7rem;
   grid-column: full-start / full-end;
   display: flex;
   align-items: center;
   &__list {
     list-style: none;
+
     &--left {
       margin-right: auto;
     }
@@ -15,5 +17,9 @@
       grid-column-gap: 6rem;
       align-items: center;
     }
+  }
+
+  &__item {
+    cursor: pointer;
   }
 }

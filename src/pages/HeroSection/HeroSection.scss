@@ -1,5 +1,35 @@
 .hero-section {
-  background-color: grey;
+  background-color: #252836;
+  color: #fff;
   height: calc(90vh - 7rem);
   grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns:
+    [hero-start] minmax(6rem, 1fr) [content-start first-end] repeat(
+      12,
+      [col-start] minmax(min-content, 10rem) [col-end]
+    )
+    [content-end] minmax(6rem, 1fr) [hero-end];
+
+  grid-template-rows: 1fr repeat(4, min-content) 1fr;
+  &-line {
+    grid-column: hero-start / first-end;
+    grid-row: 2/3;
+    justify-self: end;
+    margin-right: 1.5rem;
+  }
+  &__heading-4 {
+    grid-column: col-start 1 / col-end 5;
+    grid-row: 2/3;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  &__heading-1 {
+    grid-column: col-start 1 / col-end 5;
+    grid-row: 3/4;
+  }
+  &__paragraph {
+    grid-column: col-start 1 / col-end 5;
+    grid-row: 4/6;
+    font-family: "Lagu Sans Regular";
+  }
 }

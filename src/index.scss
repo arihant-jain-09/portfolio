@@ -13,3 +13,23 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
 }
+
+@font-face {
+  font-family: "DexaPro-regular";
+  src: url(./fonts//DexaPro-400-Regular.ttf);
+}
+@font-face {
+  font-family: "DexaPro-medium";
+  src: url(./fonts/DexaPro-500-Medium.ttf);
+}
+@font-face {
+  font-family: "DexaPro-bold";
+  src: url(./fonts/DexaPro-700-Bold.ttf);
+}
+@font-face {
+  font-family: "Lagu Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lagu Sans Regular"),
+    url(./fonts/LaguSans-Regular.woff) format("woff");
+}

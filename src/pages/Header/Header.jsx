@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className='header'>
             <ul className="header__list header__list--left">
-                <li className="header__brand">
+                <li className="header__brand header__item">
                     LOGO
                 </li>
             </ul>
