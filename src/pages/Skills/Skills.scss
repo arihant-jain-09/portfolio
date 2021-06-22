@@ -1,5 +1,47 @@
+@import "../../styles/variables/variables";
 .skills {
-  background-color: rgba(117, 68, 163, 7);
-  height: 7rem;
-  grid-column: content-start / content-end;
+  background-color: $tertiary-color;
+  grid-column: full-start / full-end;
+  padding: 7rem 0;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [content-start] repeat(
+      12,
+      10rem
+    ) [content-end] minmax(6rem, 1fr) [full-end];
+  &__background {
+    grid-column: full-start / full-end;
+    &-element {
+      position: absolute;
+    }
+    &-hexagonstraight {
+      left: -5%;
+      svg {
+        path {
+          stroke: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+  }
+
+  &__section {
+    grid-column: content-start/content-end;
+  }
+  &__name {
+    color: #fff;
+  }
+  &__rectline {
+    svg rect {
+      fill: $primary-color;
+    }
+  }
+  &__content {
+    padding: 2rem 0;
+    &-type1 {
+      grid-column: 2/6;
+      justify-self: end;
+    }
+    &-type2 {
+      grid-column: 10/14;
+    }
+  }
 }

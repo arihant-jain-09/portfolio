@@ -1,5 +1,55 @@
+@import "../../styles/variables/variables";
+@import "../../styles/utitlity/utility";
 .about {
-  background-color: rgb(147, 165, 82);
-  height: 7rem;
-  grid-column: content-start / content-end;
+  background-color: transparent;
+  grid-column: full-start / full-end;
+  grid-row: 3/4;
+  padding: 7rem 0;
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [content-start] repeat(12, 10rem)
+    [content-end] minmax(6rem, 1fr) [full-end];
+  z-index: 1;
+  &__background {
+    background-color: $tertiary-dark-color;
+    position: relative;
+    grid-column: full-start/full-end;
+    grid-row: 3/4;
+    &-element {
+      position: absolute;
+    }
+    &-dottedbig {
+      top: 5%;
+      right: 0;
+      svg circle {
+        fill: $tertiary-light-color;
+      }
+    }
+    &-dottedsmall {
+      top: 25%;
+      svg circle {
+        fill: $tertiary-light-color;
+      }
+    }
+  }
+
+  &__section {
+    grid-column: content-start / content-end;
+  }
+  &__paragraph {
+    padding: 7rem 0 3rem 0;
+    grid-column: 7 / 12;
+  }
+  &__signature {
+    width: 20rem;
+    grid-column: 7/9;
+    margin-left: -3.5rem;
+    svg {
+      fill: $primary-color;
+    }
+  }
+  &__button {
+    grid-column: 7/8;
+    padding-top: 1rem;
+  }
 }

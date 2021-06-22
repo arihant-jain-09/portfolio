@@ -1,0 +1,19 @@
+@import "../../styles/variables/variables";
+.section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__background-text {
+    font-size: 8rem;
+    font-family: "DexaPro-bold";
+    position: absolute;
+    color: $tertiary-light-color;
+    letter-spacing: 0.1rem;
+  }
+  &__text {
+    font-size: 4rem;
+    font-family: "DexaPro-bold";
+    color: $primary-color;
+  }
+}

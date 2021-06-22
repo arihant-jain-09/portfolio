@@ -15,7 +15,7 @@ const Header = () => {
                 <li className="header__item">SKILLS</li>
                 <li className="header__item">PORTFOLIO</li>
                 <li className="header__item">RESUME</li>
-                <Button type='ghost'/>
+                <Button type='ghost'>Let's Talk</Button>
             </ul>
         </div>
     )

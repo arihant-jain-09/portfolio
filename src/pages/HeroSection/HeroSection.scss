@@ -1,8 +1,10 @@
+@import "../../styles/variables/variables";
 .hero-section {
-  background-color: #252836;
+  background-color: $tertiary-color;
   color: #fff;
   height: calc(90vh - 7rem);
   grid-column: full-start / full-end;
+  grid-row: 2/3;
   display: grid;
   grid-template-columns:
     [hero-start] minmax(6rem, 1fr) [content-start first-end] repeat(
@@ -11,7 +13,7 @@
     )
     [content-end] minmax(6rem, 1fr) [hero-end];
 
-  grid-template-rows: 1fr repeat(4, min-content) 1fr;
+  grid-template-rows: 1fr repeat(8, min-content) 1fr;
   &-line {
     grid-column: hero-start / first-end;
     grid-row: 2/3;
@@ -32,4 +34,70 @@
     grid-row: 4/6;
     font-family: "Lagu Sans Regular";
   }
+  &__button {
+    grid-column: col-start 1 / col-end 5;
+    grid-row: 6/7;
+    padding-top: 3.5rem;
+  }
 }
+
+.hero-section__background {
+  grid-row: 2/3;
+  &-element {
+    position: absolute;
+  }
+  &-hexagonstraight {
+    left: -7%;
+    top: 35%;
+    svg {
+      path {
+        stroke: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  &-circle {
+    left: 35%;
+    svg {
+      width: 5em;
+      height: 5rem;
+    }
+  }
+  &-dot {
+    right: 35%;
+    svg circle {
+      fill: $tertiary-light-color;
+    }
+  }
+  &-hexagonbenzene {
+    right: 0%;
+    top: 25%;
+    svg {
+      path {
+        stroke: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  &-triangle {
+    left: 3%;
+    top: 10%;
+    svg {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  &-benzene {
+    left: 55%;
+    bottom: 20%;
+  }
+  &-tiltedtriangle {
+    left: 25%;
+    bottom: 25%;
+    transform: rotate(31deg);
+    svg {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
+
+//width="275" height="200"

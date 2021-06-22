@@ -1,25 +1,11 @@
+@import "./styles/variables/variables";
+@import "./styles/hexagon";
+@import "./styles/triangle";
+@import "./styles/benzene";
+@import "./styles/Typography/typography";
+@import "./styles/utitlity/utility";
 .app {
   display: grid;
+  overflow: hidden;
   grid-template-columns: [full-start] 1fr [content-start] repeat(12, 10rem) [content-end] 1fr [full-end];
-}
-$primary-color: #ea7c69;
-$primary-light-color: rgba(234, 124, 105, 0.8);
-.u-color-primary-light {
-  color: $primary-light-color;
-}
-.u-color-primary {
-  color: $primary-color;
-}
-.heading-1 {
-  font-size: 5rem;
-  font-family: "DexaPro-bold";
-}
-.heading-4 {
-  font-size: 1.5rem;
-  padding-bottom: 2rem;
-}
-.paragraph {
-  font-size: 1.25rem;
-  line-height: 2;
-  color: rgba(255, 255, 255, 0.8);
 }

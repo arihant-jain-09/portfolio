@@ -10,8 +10,19 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-family: "Lagu Sans Medium";
+  font-size: 1.25rem;
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #1b1e2c;
+    // outline: 1px solid slategrey;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #252836;
+  }
 }
 
 @font-face {
@@ -32,4 +43,18 @@ body {
   font-weight: normal;
   src: local("Lagu Sans Regular"),
     url(./fonts/LaguSans-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Lagu Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lagu Sans Medium"),
+    url(./fonts/LaguSans-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Lagu Sans SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lagu Sans SemiBold"),
+    url(./fonts/LaguSans-SemiBold.woff) format("woff");
 }

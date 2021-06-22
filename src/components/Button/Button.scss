@@ -1,11 +1,25 @@
+@import "../../styles/variables/variables";
 .button {
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 0.5rem 1rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-2px);
+  }
+  &:focus {
+    transform: translateY(-1px);
+  }
 }
 .button--ghost {
   background-color: transparent;
-  border: 2px solid #ea7c69;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+}
+.button--primary {
+  background-color: $primary-color;
+  outline: none;
+  border: none;
   color: #fff;
-  // border: 2px solid #fff;
-  // color: #ea7c69;
+  padding: 1rem 2.5rem;
 }

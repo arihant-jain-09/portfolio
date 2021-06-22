@@ -1,6 +1,7 @@
+@import "../../styles/variables/variables";
 .header {
-  background-color: #1f1d2b;
-  color: #ea7c69;
+  background-color: $tertiary-color;
+  color: $primary-color;
   height: 7rem;
   grid-column: full-start / full-end;
   display: flex;
@@ -16,10 +17,15 @@
       grid-template-columns: repeat(6, minmax(max-content, 5rem)) 7rem;
       grid-column-gap: 6rem;
       align-items: center;
+      letter-spacing: 0.1rem;
     }
   }
 
   &__item {
     cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-2px);
+    }
   }
 }
