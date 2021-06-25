@@ -6,8 +6,8 @@ import Section from '../../components/Section/Section'
 const Portfolio = () => {
     return (<>
         <div className="portfolio__background">
-            <div className="portfolio__background-dottedbig portfolio__background-element dottedbig"><DottedBig/></div>
-            <img className="image portfolio__background-image portfolio__background-element" src="/discord.png" alt="discord-clone"/>
+            <div className="portfolio__background-dottedbig portfolio__background-element"><DottedBig/></div>
+            <div className="image portfolio__background-image"></div>
         </div>
         <div className='portfolio'>
             <div className="portfolio-line"><Line/></div>

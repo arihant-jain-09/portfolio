@@ -7,7 +7,7 @@
   padding: 7rem 0 25rem 0;
   display: grid;
   grid-template-columns:
-    [portfolio-start] minmax(6rem, 1fr) [content-start first-end] repeat(
+    [portfolio-start] minmax(10rem, 1fr) [content-start first-end] repeat(
       12,
       [col-start] minmax(min-content, 10rem) [col-end]
     )
@@ -28,10 +28,18 @@
       }
     }
     &-image {
+      position: absolute;
       bottom: 5%;
       right: -10%;
+      background-image: url(../../assets/discord.png);
       width: 50%;
-      border-radius: 4px;
+      height: 50%;
+      background-size: cover;
+      border-radius: 5px;
+      // box-shadow: -5px 5px 0px 0px $tertiary-light-color;
+      @media screen and (max-width: 1100px) {
+        width: 40%;
+      }
     }
   }
 

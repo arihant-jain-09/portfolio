@@ -14,10 +14,13 @@
     }
     &--right {
       display: grid;
-      grid-template-columns: repeat(6, minmax(max-content, 5rem)) 7rem;
+      grid-template-columns: repeat(6, minmax(max-content, 5rem));
       grid-column-gap: 6rem;
       align-items: center;
       letter-spacing: 0.1rem;
+      &:last-child {
+        padding-right: 4rem;
+      }
     }
   }
 
