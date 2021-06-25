@@ -5,16 +5,20 @@
   grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
   grid-column-gap: 7rem;
   @media screen and (max-width: 900px) {
-    grid-column-gap: 2rem;
+    grid-column-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   }
 }
 .skills {
   background-color: $tertiary-color;
   grid-column: full-start / full-end;
-  padding: 7rem;
+  padding: 7rem 17rem;
   grid-row: 4/5;
+  @media screen and (max-width: 1100px) {
+    padding: 7rem;
+  }
   @media screen and (max-width: 900px) {
-    padding: 3rem;
+    padding: 7rem 5rem;
   }
   &__background {
     grid-column: full-start / full-end;
