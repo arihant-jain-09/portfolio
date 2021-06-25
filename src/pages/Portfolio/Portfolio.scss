@@ -1,5 +1,63 @@
+@import "../../styles/variables/variables";
 .portfolio {
-  background-color: rgb(70, 146, 136);
-  height: 7rem;
-  grid-column: content-start / content-end;
+  background-color: $tertiary-dark-color;
+  // height: 50rem;
+  grid-column: full-start / full-end;
+  grid-row: 5/6;
+  padding: 7rem 0 25rem 0;
+  display: grid;
+  grid-template-columns:
+    [portfolio-start] minmax(6rem, 1fr) [content-start first-end] repeat(
+      12,
+      [col-start] minmax(min-content, 10rem) [col-end]
+    )
+    [content-end] minmax(6rem, 1fr) [portfolio-end];
+
+  &__background {
+    grid-column: full-start / full-end;
+    background-color: transparent;
+    grid-row: 5/6;
+    position: relative;
+    &-element {
+      position: absolute;
+    }
+    &-dottedbig {
+      top: 2%;
+      svg circle {
+        fill: $tertiary-light-color;
+      }
+    }
+    &-image {
+      bottom: 5%;
+      right: -10%;
+      width: 50%;
+      border-radius: 4px;
+    }
+  }
+
+  &__section {
+    grid-column: content-start / content-end;
+    padding-bottom: 10rem;
+  }
+  &-line {
+    grid-column: portfolio-start / first-end;
+    grid-row: 2/3;
+    justify-self: end;
+    margin-right: 1.5rem;
+  }
+  &__heading-4 {
+    grid-column: col-start 1 / col-end 5;
+    grid-row: 2/3;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  &__heading-1 {
+    grid-column: col-start 1 / col-end 5;
+    grid-row: 3/4;
+    color: #fff;
+  }
+  &__paragraph {
+    grid-column: col-start 1 / col-end 5;
+    grid-row: 4/6;
+    font-family: "Lagu Sans Regular";
+  }
 }

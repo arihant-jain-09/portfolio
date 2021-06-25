@@ -1,5 +1,25 @@
-.say-hello {
-  background-color: rgb(156, 53, 139);
-  height: 7rem;
-  grid-column: content-start / content-end;
+@import "../../styles/variables/variables";
+.sayHello {
+  background-color: $tertiary-color;
+  grid-column: full-start / full-end;
+  padding: 7rem 0;
+  display: grid;
+  grid-template-columns:
+    [hello-start] minmax(6rem, 1fr) [content-start first-end] repeat(
+      12,
+      [col-start] minmax(min-content, 10rem) [col-end]
+    )
+    [content-end] minmax(6rem, 1fr) [hello-end];
+  justify-items: center;
+  &__background {
+    background-color: transparent;
+  }
+  &__heading-1 {
+    grid-column: content-start / content-end;
+    color: #fff;
+  }
+  &__button {
+    padding-top: 3rem;
+    grid-column: content-start / content-end;
+  }
 }

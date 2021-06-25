@@ -1,10 +1,14 @@
 import React from 'react'
 import './Testimonial.scss'
 const Testimonial = () => {
-    return (
+    return (<>
+        <div className="testimonial__background">
+            
+        </div>
         <div className='testimonial'>
             Testimonial
         </div>
+        </>
     )
 }
 

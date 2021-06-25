@@ -1,5 +1,41 @@
+@import "../../styles/variables/variables";
 .form {
-  background-color: rgba(11, 46, 53, 0.747);
-  height: 7rem;
-  grid-column: content-start / content-end;
+  background-color: transparent;
+  height: 50rem;
+  grid-column: full-start / full-end;
+  grid-row: 7/8;
+  padding: 7rem 0;
+  display: grid;
+  grid-template-columns:
+    [form-start] minmax(6rem, 1fr) [content-start first-end] repeat(
+      12,
+      [col-start] minmax(min-content, 10rem) [col-end]
+    )
+    [content-end] minmax(6rem, 1fr) [form-end];
+  z-index: 1;
+  &__background {
+    background-color: $tertiary-dark-color;
+    grid-column: full-start / full-end;
+    grid-row: 7/8;
+    position: relative;
+    &-element {
+      position: absolute;
+    }
+    &-color {
+      background-color: $primary-color;
+      height: 40%;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+  &__heading-3 {
+    color: #fff;
+    padding-top: 6rem;
+    grid-column: content-start / col-end 6;
+  }
+  &__formelement {
+    background-color: $tertiary-light-color;
+    padding: 4rem 6rem;
+    grid-column: col-start 9 / col-end 12;
+  }
 }

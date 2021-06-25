@@ -5,7 +5,7 @@ import About from './pages/About/About'
 import Skills from './pages/Skills/Skills'
 import Portfolio from './pages/Portfolio/Portfolio'
 import SayHello from './pages/SayHello/SayHello'
-import Testimonial from './pages/Testimonial/Testimonial'
+// import Testimonial from './pages/Testimonial/Testimonial'
 import Form from './pages/Form/Form'
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Skills/>
         <Portfolio/>
         <SayHello/>
-        <Testimonial/>
+        {/* <Testimonial/> */}
         <Form/>   
     </div>
   );

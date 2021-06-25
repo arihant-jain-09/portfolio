@@ -4,12 +4,13 @@
   grid-column: full-start / full-end;
   padding: 7rem 0;
   display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [content-start] repeat(
-      12,
-      10rem
-    ) [content-end] minmax(6rem, 1fr) [full-end];
+  grid-row: 4/5;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [content-start] repeat(12, 10rem)
+    [content-end] minmax(6rem, 1fr) [full-end];
   &__background {
     grid-column: full-start / full-end;
+    grid-row: 4/5;
     &-element {
       position: absolute;
     }
