@@ -8,6 +8,9 @@
 .heading-3 {
   font-size: 2.75rem;
   font-family: "DexaPro-medium";
+  @media screen and (max-width: 1150px) {
+    font-size: 2.3rem;
+  }
 }
 .heading-4 {
   font-size: 1.5rem;

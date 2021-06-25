@@ -12,6 +12,7 @@
       [col-start] minmax(min-content, 10rem) [col-end]
     )
     [content-end] minmax(6rem, 1fr) [form-end];
+
   z-index: 1;
   &__background {
     background-color: $tertiary-dark-color;
@@ -23,15 +24,29 @@
     }
     &-color {
       background-color: $primary-color;
-      height: 40%;
+      height: 36%;
       width: 100%;
       bottom: 0;
+    }
+  }
+  &__left {
+    grid-column: content-start / col-end 7;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  &__dasharrow {
+    display: inline-block;
+    grid-column: 5/-1;
+    @media screen and (max-width: 1000px) {
+      margin-top: -0.5rem;
     }
   }
   &__heading-3 {
     color: #fff;
     padding-top: 6rem;
-    grid-column: content-start / col-end 6;
+    grid-column: 1 / -1;
   }
   &__formelement {
     background-color: $tertiary-light-color;
