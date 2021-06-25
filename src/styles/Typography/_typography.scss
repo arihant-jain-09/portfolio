@@ -21,6 +21,21 @@
   font-family: "DexaPro-medium";
   letter-spacing: 0.07rem;
 }
+.detail {
+  font-size: 1.75rem;
+  font-family: "DexaPro-medium";
+  letter-spacing: 0.07rem;
+  color: rgba(255, 255, 255, 0.8);
+  @media screen and (max-width: 1000px) {
+    font-size: 1.38rem;
+  }
+  @media screen and (max-width: 900px) {
+    font-size: 1.35rem;
+  }
+  @media screen and (max-width: 750px) {
+    font-size: 1.75rem;
+  }
+}
 .paragraph {
   font-size: 1.25rem;
   line-height: 2;

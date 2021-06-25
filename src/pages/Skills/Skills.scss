@@ -15,7 +15,7 @@
   padding: 7rem 18.5rem;
   grid-row: 4/5;
   @media screen and (max-width: 1150px) {
-    padding: 7rem 7.5rem;
+    padding: 7rem;
   }
   @media screen and (max-width: 900px) {
     padding: 7rem 5rem;
@@ -38,7 +38,7 @@
 
   &__section {
     grid-column: content-start/content-end;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
   }
   &__name {
     color: #fff;

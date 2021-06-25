@@ -1,7 +1,7 @@
 @import "../../styles/variables/variables";
 .form {
   background-color: transparent;
-  height: 50rem;
+  // height: 50rem;
   grid-column: full-start / full-end;
   grid-row: 7/8;
   padding: 7rem 0;
@@ -24,16 +24,23 @@
     }
     &-color {
       background-color: $primary-color;
-      height: 36%;
+      height: 45%;
       width: 100%;
       bottom: 0;
+      @media screen and (max-width: 750px) {
+        height: 34%;
+      }
     }
   }
   &__left {
     grid-column: content-start / col-end 7;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: 1fr min-content 1fr;
+
+    @media screen and (max-width: 750px) {
+      grid-column: content-start / -1;
+    }
   }
 
   &__dasharrow {
@@ -47,10 +54,29 @@
     color: #fff;
     padding-top: 6rem;
     grid-column: 1 / -1;
+    @media screen and (max-width: 750px) {
+      grid-column: 1/6;
+    }
+  }
+  &__details {
+    grid-column: 1 / -1;
+    margin-top: 4rem;
+    align-self: center;
+    span {
+      margin-right: 0.75rem;
+    }
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
   }
   &__formelement {
     background-color: $tertiary-light-color;
     padding: 4rem 6rem;
     grid-column: col-start 9 / col-end 12;
+
+    @media screen and (max-width: 750px) {
+      grid-column: col-start 1 / col-end 12;
+      margin-top: 4rem;
+    }
   }
 }
