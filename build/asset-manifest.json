@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8096cdc2.chunk.css",
+    "main.js": "/static/js/main.da45ac68.chunk.js",
+    "main.js.map": "/static/js/main.da45ac68.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b83279d6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b83279d6.js.map",
+    "static/js/2.097cced5.chunk.js": "/static/js/2.097cced5.chunk.js",
+    "static/js/2.097cced5.chunk.js.map": "/static/js/2.097cced5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8096cdc2.chunk.css.map": "/static/css/main.8096cdc2.chunk.css.map",
+    "static/js/2.097cced5.chunk.js.LICENSE.txt": "/static/js/2.097cced5.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/LaguSans-SemiBold.3f7f3e67.woff",
+    "static/media/benzene.fba1fd04.svg": "/static/media/benzene.fba1fd04.svg",
+    "static/media/circle.035ce1f8.svg": "/static/media/circle.035ce1f8.svg",
+    "static/media/dot.7a1cb84b.svg": "/static/media/dot.7a1cb84b.svg",
+    "static/media/dotted-big.6b19c50e.svg": "/static/media/dotted-big.6b19c50e.svg",
+    "static/media/dotted-small.c6bb1028.svg": "/static/media/dotted-small.c6bb1028.svg",
+    "static/media/hexagon-benzene.7cf7031c.svg": "/static/media/hexagon-benzene.7cf7031c.svg",
+    "static/media/hexagon-straight.2e2bb4ad.svg": "/static/media/hexagon-straight.2e2bb4ad.svg",
+    "static/media/line.17590a08.svg": "/static/media/line.17590a08.svg",
+    "static/media/rectline.f5785aa0.svg": "/static/media/rectline.f5785aa0.svg",
+    "static/media/signature.4dee0e27.svg": "/static/media/signature.4dee0e27.svg",
+    "static/media/triangle.cb6ab15c.svg": "/static/media/triangle.cb6ab15c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b83279d6.js",
+    "static/js/2.097cced5.chunk.js",
+    "static/css/main.8096cdc2.chunk.css",
+    "static/js/main.da45ac68.chunk.js"
+  ]
+}
