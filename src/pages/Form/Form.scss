@@ -22,6 +22,15 @@
     &-element {
       position: absolute;
     }
+    &-hexagonbenzene {
+      right: 0%;
+      top: 5%;
+      svg {
+        path {
+          stroke: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
     &-color {
       background-color: $primary-color;
       height: 45%;
@@ -63,6 +72,7 @@
     margin-top: 4rem;
     align-self: center;
     span {
+      color: $tertiary-light-color;
       margin-right: 0.75rem;
     }
     & > *:not(:last-child) {

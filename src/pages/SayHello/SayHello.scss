@@ -3,6 +3,7 @@
   background-color: $tertiary-color;
   grid-column: full-start / full-end;
   padding: 7rem 0;
+  grid-row: 6/7;
   display: grid;
   grid-template-columns:
     [hello-start] minmax(6rem, 1fr) [content-start first-end] repeat(
@@ -12,7 +13,19 @@
     [content-end] minmax(6rem, 1fr) [hello-end];
   justify-items: center;
   &__background {
+    grid-column: full-start / full-end;
+    grid-row: 6/7;
     background-color: transparent;
+    position: relative;
+    &-element {
+      position: absolute;
+    }
+    &-dottedsmall {
+      top: 25%;
+      svg circle {
+        fill: $tertiary-light-color;
+      }
+    }
   }
   &__heading-1 {
     grid-column: content-start / content-end;
