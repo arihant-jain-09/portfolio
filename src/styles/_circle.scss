@@ -1,17 +1,12 @@
-.benzene {
-  svg {
-    path {
-      stroke: rgba(255, 255, 255, 0.1);
-    }
-  }
+.circle {
   @media screen and (max-width: 1100px) {
     svg {
-      width: 2.6rem;
+      width: 4rem;
     }
   }
   @media screen and (max-width: 900px) {
     svg {
-      width: 2.25rem;
+      width: 3.2rem;
     }
   }
 }

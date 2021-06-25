@@ -7,7 +7,7 @@
   grid-row: 2/3;
   display: grid;
   grid-template-columns:
-    [hero-start] minmax(6rem, 1fr) [content-start first-end] repeat(
+    [hero-start] minmax(10rem, 1fr) [content-start first-end] repeat(
       12,
       [col-start] minmax(min-content, 10rem) [col-end]
     )

@@ -1,5 +1,6 @@
 import React from 'react'
 import './HeroSection.scss'
+import '../../styles/Elements/elements.scss'
 import {ReactComponent as Line} from '../../assets/line.svg'
 import {ReactComponent as HexagonStraight} from '../../assets/hexagon-straight.svg'
 import {ReactComponent as Circle} from '../../assets/circle.svg'
@@ -12,9 +13,9 @@ const HeroSection = () => {
     return (<>
         <div className="hero-section__background">
             <div className="hero-section__background-hexagonstraight hero-section__background-element hexagon"><HexagonStraight/></div>
-            <div className="hero-section__background-circle hero-section__background-element"><Circle/></div>
-            <div className="hero-section__background-dot hero-section__background-element"><Dot/></div>
-            <div className="hero-section__background-hexagonbenzene hero-section__background-element hexagon"><HexagonBenzene/></div>
+            <div className="hero-section__background-circle hero-section__background-element circle"><Circle/></div>
+            <div className="hero-section__background-dot hero-section__background-element dot"><Dot/></div>
+            <div className="hero-section__background-hexagonbenzene hero-section__background-element hexabenzene"><HexagonBenzene/></div>
             <div className="hero-section__background-triangle hero-section__background-element triangle"><Triangle/></div>
             <div className="hero-section__background-benzene hero-section__background-element benzene"><Benzene/></div>
             <div className="hero-section__background-tiltedtriangle hero-section__background-element triangle"><Triangle/></div>

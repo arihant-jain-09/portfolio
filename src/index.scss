@@ -8,6 +8,13 @@
 
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: 900px) {
+    font-size: 56.25%;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 50%;
+  }
 }
 body {
   font-family: "Lagu Sans Medium";

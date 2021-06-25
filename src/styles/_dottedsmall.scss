@@ -1,0 +1,12 @@
+.dottedsmall {
+  @media screen and (max-width: 1100px) {
+    svg {
+      width: 5rem;
+    }
+  }
+  //   @media screen and (max-width: 900px) {
+  //     svg {
+  //       width: 8rem;
+  //     }
+  //   }
+}

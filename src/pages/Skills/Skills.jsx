@@ -5,7 +5,7 @@ import Section from '../../components/Section/Section'
 const Skills = () => {
     return (<>
         <div className="skills__background">
-            <div className="skills__background-hexagonstraight skills__background-element"><HexagonStraight/></div>
+            <div className="skills__background-hexagonstraight skills__background-element hexagon"><HexagonStraight/></div>
         </div>
         <div className='skills'>
             <div className="skills__section"><Section text="Skills">Skills</Section></div>

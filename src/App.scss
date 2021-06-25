@@ -1,14 +1,11 @@
 @import "./styles/variables/variables";
-@import "./styles/hexagon";
-@import "./styles/triangle";
-@import "./styles/benzene";
+@import "./styles/Elements/elements.scss";
 @import "./styles/Typography/typography";
 @import "./styles/utitlity/utility";
 .app {
   display: grid;
   overflow: hidden;
-  grid-template-columns: [full-start] 1fr [content-start] repeat(
-      12,
-      minmax(min-content, 10rem)
-    ) [content-end] 1fr [full-end];
+  grid-template-columns:
+    [full-start] 1fr [content-start] repeat(12, minmax(min-content, 10rem))
+    [content-end] 1fr [full-end];
 }
