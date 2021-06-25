@@ -7,7 +7,7 @@
   padding: 7rem 0;
   display: grid;
   grid-template-columns:
-    [full-start] minmax(6rem, 1fr) [content-start] repeat(12, 10rem)
+    [full-start] minmax(6rem, 1fr) [content-start] repeat(12, 1fr)
     [content-end] minmax(6rem, 1fr) [full-end];
   z-index: 1;
   &__background {
