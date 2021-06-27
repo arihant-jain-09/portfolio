@@ -49,13 +49,13 @@
       height: 42rem;
     }
     @media screen and (max-width: 1100px) {
-      height: 44rem;
+      height: 45rem;
     }
     @media screen and (max-width: 1000px) {
-      height: 47rem;
+      height: 48rem;
     }
     @media screen and (max-width: 800px) {
-      height: 48rem;
+      height: 49rem;
     }
     @media screen and (max-width: 700px) {
       padding: 0 2rem;
@@ -93,6 +93,7 @@
   }
   &__paragraph {
     grid-column: 2 / 7;
+    padding-top: 0.75rem;
     @media screen and (max-width: 700px) {
       grid-column: 2 / 8;
     }
