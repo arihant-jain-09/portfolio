@@ -52,6 +52,12 @@
     grid-row: 2/3;
     justify-self: end;
     margin-right: 1.5rem;
+    margin-top: -0.1rem;
+    @media screen and (max-width: 900px) {
+      svg {
+        width: 4rem;
+      }
+    }
   }
   &__heading-4 {
     grid-column: col-start 1 / col-end 5;
