@@ -17,7 +17,7 @@ function App() {
         <Portfolio/>
         <SayHello/>
         {/* <Testimonial/> */}
-        <Form/>   
+        <Form />   
     </div>
   );
 }

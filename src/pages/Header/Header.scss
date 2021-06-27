@@ -6,6 +6,7 @@
   grid-column: full-start / full-end;
   display: flex;
   align-items: center;
+  position: relative;
   &__list {
     list-style: none;
 
@@ -37,6 +38,12 @@
   }
 
   &__burger {
+    &-container {
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
     height: 0.3rem;
     width: 2rem;
     background-color: $primary-color;
@@ -56,5 +63,37 @@
     &::after {
       bottom: -1rem;
     }
+  }
+  &__burgerlist {
+    height: 9rem;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    background-color: $primary-color;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: burgerlist 0.2s ease;
+  }
+  &__burgeritem {
+    cursor: pointer;
+    &--1 {
+      padding-bottom: 0.5rem;
+    }
+    &--2 {
+      padding-bottom: 0.5rem;
+    }
+  }
+}
+
+@keyframes burgerlist {
+  0% {
+    transform: translateY(-7rem);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
