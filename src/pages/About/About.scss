@@ -8,9 +8,6 @@
   display: grid;
   grid-template-columns: [left-start] 30vw [left-end right-start] 70vw [right-end];
   z-index: 1;
-  @media screen and (max-width: 1100px) {
-    // padding: 7rem 0 2rem 0;
-  }
   @media screen and (max-width: 700px) {
     grid-template-columns: unset;
     grid-auto-rows: minmax(min-content, max-content);
