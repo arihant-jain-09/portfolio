@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Button from '../Button/Button'
 import "./FormElement.scss"
+import emailjs from 'emailjs-com'
 const FormMap = () => {
     const [forminput,setforminput]=useState({
         name:'',
@@ -11,7 +12,19 @@ const FormMap = () => {
     const onSubmit=(e)=>{
         e.preventDefault();
         console.log(forminput);
-    }
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID , e.target, process.env.REACT_APP_USER_ID)
+        .then((response) => {
+        console.log('SUCCESS!', response.status, response);
+        }, (err) => {
+        console.log('FAILED...', err);
+        });
+        setforminput({
+            name:'',
+            mail:'',
+            budget:'',
+            description:''
+        })
+        }
 
     const onChange=(e)=>{
             const {name,value}=e.target;
