@@ -26,7 +26,7 @@ const HeroSection = () => {
                 <div className="heading-4 hero-section__heading-4 u-color-primary"><span>HELLO</span></div>
                 <div className="heading-1 hero-section__heading-1">I'm <span className='u-color-primary'>Arihant</span> Jain</div>
                 <div className="paragraph hero-section__paragraph">This is <span className='u-color-primary-light'>Arihant Jain,</span> Full Stack Developer, interests in Web Frameworks and technologies, looking for work</div>
-                <div className="hero-section__button"><a target='_blank' rel='noreferrer'href="https://www.figma.com/proto/xRlEWANb4MWgOxOHje9Ucm/Untitled?page-id=0%3A1&node-id=1%3A2&viewport=782%2C350%2C0.5647174119949341&scaling=min-zoom"><Button type='primary'>Download CV</Button></a></div>
+                <div className="hero-section__button"><a target='_blank' rel='noreferrer'href="/resume.pdf"><Button type='primary'>Download CV</Button></a></div>
             <div className="hero-section__image">
 
             </div>
