@@ -7,6 +7,9 @@
   padding: 7rem 0 10rem 0;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 700px) {
+    padding: 7rem 0;
+  }
   &__1 {
     grid-column: 1/-1;
     display: grid;
@@ -50,7 +53,7 @@
       grid-template-columns: unset;
       display: flex;
       flex-direction: column;
-      padding: 7rem 0;
+      padding: 5rem 0;
     }
     &-left {
       grid-column: left-start / left-end;
@@ -173,25 +176,14 @@
         fill: $tertiary-light-color;
       }
     }
-    // &-image {
-    //   position: absolute;
-    //   bottom: 5%;
-    //   right: -10%;
-    //   background-image: url(../../assets/discord.png);
-    //   width: 50%;
-    //   height: 50%;
-    //   background-size: cover;
-    //   border-radius: 5px;
-    //   // box-shadow: -5px 5px 0px 0px $tertiary-light-color;
-    //   @media screen and (max-width: 1100px) {
-    //     width: 40%;
-    //   }
-    // }
   }
 
   &__section {
     grid-column: left-start / right-end;
     padding-bottom: 10rem;
+    @media screen and (max-width: 700px) {
+      padding-bottom: 5rem;
+    }
   }
   &-line {
     grid-column: portfolio-start / first-end;

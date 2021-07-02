@@ -12,6 +12,11 @@
     )
     [content-end] minmax(10rem, 1fr) [full-end];
   align-items: center;
+  &__brand {
+    svg {
+      height: 4rem;
+    }
+  }
   &__list {
     list-style: none;
 
@@ -27,6 +32,12 @@
       grid-column-gap: 6rem;
       align-items: center;
       letter-spacing: 0.1rem;
+      @media screen and (max-width: 1000px) {
+        grid-column-gap: 5rem;
+      }
+      @media screen and (max-width: 800px) {
+        grid-column-gap: 4.75rem;
+      }
       @media screen and (max-width: 700px) {
         grid-column: 6 / -1;
         grid-template-columns: repeat(2, minmax(max-content, 5rem));
