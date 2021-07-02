@@ -8,6 +8,10 @@ import {ReactComponent as Dot} from '../../assets/dot.svg'
 import {ReactComponent as HexagonBenzene} from '../../assets/hexagon-benzene.svg'
 import {ReactComponent as Triangle} from '../../assets/triangle.svg'
 import {ReactComponent as Benzene} from '../../assets/benzene.svg'
+import {ReactComponent as Github} from '../../assets/github.svg';
+import {ReactComponent as Linkedin} from '../../assets/linkedin.svg';
+import {ReactComponent as Instagram} from '../../assets/Instagram.svg';
+import {ReactComponent as Whatsapp} from '../../assets/whatsapp.svg';
 import Button from '../../components/Button/Button'
 const HeroSection = () => {
     return (<>
@@ -27,9 +31,12 @@ const HeroSection = () => {
                 <div className="heading-1 hero-section__heading-1">I'm <span className='u-color-primary'>Arihant</span> Jain</div>
                 <div className="paragraph hero-section__paragraph">This is <span className='u-color-primary-light'>Arihant Jain,</span> Full Stack Developer, interests in Web Frameworks and technologies, looking for work</div>
                 <div className="hero-section__button"><a target='_blank' rel='noreferrer'href="/resume.pdf"><Button type='primary'>Download CV</Button></a></div>
-            <div className="hero-section__image">
-
-            </div>
+                <div className="hero-section__icons">
+                    <div className="hero-section__icons-icon"><a target='_blank' rel='noreferrer' href="https://github.com/arihant-jain-09"><Github/></a></div>
+                    <div className="hero-section__icons-icon"><a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/arihant-jain-09/"><Linkedin/></a></div>
+                    <div className="hero-section__icons-icon"><a target='_blank' rel='noreferrer' href="https://www.instagram.com/arihant_jain_09/"><Instagram/></a></div>
+                    <div className="hero-section__icons-icon"><a target='_blank' rel='noreferrer' href="https://api.whatsapp.com/send?phone=7239873575"><Whatsapp/></a></div>
+                </div>
         </div>
         </>
     )

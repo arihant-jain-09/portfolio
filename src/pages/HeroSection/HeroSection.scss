@@ -49,6 +49,22 @@
     grid-row: 6/7;
     padding-top: 3.5rem;
   }
+  &__icons {
+    grid-column: col-start 1 / col-end 5;
+    grid-row: 10/11;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: flex-end;
+    &-icon {
+      svg {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
 }
 
 .hero-section__background {
