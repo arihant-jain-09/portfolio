@@ -206,6 +206,9 @@
     grid-column: col-start 1 / col-end 5;
     grid-row: 3/4;
     color: #fff;
+    @media screen and (max-width: 700px) {
+      padding-bottom: 0.5rem;
+    }
     @media screen and (max-width: 500px) {
       font-size: 4rem;
     }

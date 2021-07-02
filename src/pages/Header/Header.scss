@@ -23,12 +23,16 @@
     &--left {
       // margin-right: auto;
       grid-column: content-start / 3;
+      @media screen and (max-width: 700px) {
+        grid-column: full-start / 3;
+        padding-left: 3rem;
+      }
     }
     &--right {
       grid-column: 6 / content-end;
       justify-content: end;
       display: grid;
-      grid-template-columns: repeat(5, minmax(max-content, 5rem));
+      grid-template-columns: repeat(4, minmax(max-content, 5rem));
       grid-column-gap: 6rem;
       align-items: center;
       letter-spacing: 0.1rem;

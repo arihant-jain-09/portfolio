@@ -28,12 +28,12 @@ const Header = () => {
                     <li className="header__item">PORTFOLIO</li>
                 </Link>
                 
-                <li className="header__item">RESUME</li>
-                <Link to="form" spy={true} smooth={true} duration={500}>
+                {/* <li className="header__item">RESUME</li> */}
+                <Link to="form" spy={true} smooth={true} duration={1000}>
                     <Button type='ghost'>Let's Talk</Button>
                 </Link>
             </ul> : <ul className="header__list header__list--right">
-                <Link to="form" spy={true} smooth={true} duration={500}>
+                <Link to="form" spy={true} smooth={true} duration={1000}>
                     <Button type='ghost'>Let's Talk</Button>
                 </Link>
                 <div className='header__burger-container' onClick={()=>setclicked(!clicked)}>
