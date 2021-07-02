@@ -18,7 +18,7 @@ const Portfolio = () => {
                     <div className="paragraph portfolio__paragraph"><span className='u-color-primary-light'>Discord</span> with unique roles in each server, image, audio sharing, auto render video links in messages, discord loading logo between page renderings with React, React Router, Material UI, SASS, Styled components and firebase CRUD</div>
                 </div>
                 <div className="portfolio__right">
-                    <img src="/discord.png" alt="discord" />
+                    <img src="/discord.webp" alt="discord" />
                 </div>
             </div>   
             <div className="portfolio__2">
@@ -29,7 +29,7 @@ const Portfolio = () => {
                     <div className="paragraph portfolio__paragraph"><span className='u-color-primary-light'>Food Ordering</span> Web App with Google Authentication, Payments, Food Search with suggestions, Persistent Cart, Eye catching UI, Multiple orders, Dashboard. Technologies used React, NodeJS, MongoDB, React Redux(Redux Saga), SCSS (no external library)</div>
                 </div>
                 <div className="portfolio__2-left">
-                    <img src="burgurly.png" alt="burgurly" />
+                    <img src="burgurly.webp" alt="burgurly" />
                 </div>
             </div>     
         </div>
