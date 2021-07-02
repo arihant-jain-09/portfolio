@@ -15,7 +15,7 @@ const Header = () => {
                 </li>
             </ul>
             {width > 700 ? <ul className="header__list header__list--right">
-                <li className="header__item">HOME</li>
+                {/* <li className="header__item">HOME</li> */}
                 <Link to="about" spy={true} smooth={true} duration={500}>
                     <li className="header__item">ABOUT ME</li>
                 </Link>

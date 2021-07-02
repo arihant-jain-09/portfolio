@@ -4,27 +4,36 @@
   color: $primary-color;
   height: 7rem;
   grid-column: full-start / full-end;
-  display: flex;
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(10rem, 1fr) [content-start] repeat(
+      12,
+      minmax(min-content, 10rem)
+    )
+    [content-end] minmax(10rem, 1fr) [full-end];
   align-items: center;
-  position: relative;
   &__list {
     list-style: none;
 
     &--left {
-      margin-right: auto;
+      // margin-right: auto;
+      grid-column: content-start / 3;
     }
     &--right {
+      grid-column: 6 / content-end;
+      justify-content: end;
       display: grid;
-      grid-template-columns: repeat(6, minmax(max-content, 5rem));
+      grid-template-columns: repeat(5, minmax(max-content, 5rem));
       grid-column-gap: 6rem;
       align-items: center;
       letter-spacing: 0.1rem;
-      &:last-child {
-        padding-right: 4rem;
-      }
       @media screen and (max-width: 700px) {
-        display: flex;
-        grid-template-columns: unset;
+        grid-column: 6 / -1;
+        grid-template-columns: repeat(2, minmax(max-content, 5rem));
+        grid-column-gap: 5rem;
+        & > *:not(:first-child) {
+          padding-right: 3rem;
+        }
       }
     }
   }
@@ -42,10 +51,11 @@
       height: 3.5rem;
       display: flex;
       align-items: center;
+      justify-content: flex-end;
       cursor: pointer;
     }
     height: 0.3rem;
-    width: 2rem;
+    width: 2.5rem;
     background-color: $primary-color;
     position: relative;
     &::before,
@@ -58,10 +68,10 @@
       position: absolute;
     }
     &::before {
-      top: -1rem;
+      top: -0.75rem;
     }
     &::after {
-      bottom: -1rem;
+      bottom: -0.8rem;
     }
   }
   &__burgerlist {

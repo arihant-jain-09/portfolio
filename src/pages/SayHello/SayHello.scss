@@ -12,6 +12,14 @@
     )
     [content-end] minmax(6rem, 1fr) [hello-end];
   justify-items: center;
+  @media screen and (max-width: 400px) {
+    grid-template-columns:
+      [hello-start] minmax(2rem, 1fr) [content-start first-end] repeat(
+        12,
+        [col-start] minmax(min-content, 10rem) [col-end]
+      )
+      [content-end] minmax(2rem, 1fr) [hello-end];
+  }
   &__background {
     grid-column: full-start / full-end;
     grid-row: 6/7;
@@ -30,6 +38,9 @@
   &__heading-1 {
     grid-column: content-start / content-end;
     color: #fff;
+    @media screen and (max-width: 400px) {
+      font-size: 4rem;
+    }
   }
   &__button {
     padding-top: 3rem;

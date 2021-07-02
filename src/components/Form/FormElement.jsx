@@ -38,10 +38,10 @@ const FormMap = () => {
     return (
         <>
             <form onSubmit={onSubmit} className="formelement">
-                    <div className="formelement__inputContainer"><input className="formelement__name" type='text' name="name" placeholder='Your Name' value={forminput.name} onChange={onChange}/></div>
-                    <div className="formelement__inputContainer"><input className="formelement__email" type='email' name="mail" placeholder='Mail Address' value={forminput.mail} onChange={onChange}/></div>
+                    <div className="formelement__inputContainer"><input className="formelement__name" type='text' name="name" placeholder='Your Name' value={forminput.name} onChange={onChange} required/></div>
+                    <div className="formelement__inputContainer"><input className="formelement__email" type='email' name="mail" placeholder='Mail Address' value={forminput.mail} onChange={onChange} required/></div>
                     <div className="formelement__inputContainer"><input className="formelement__budget" type='text' name="budget" placeholder='Your budget (optional)' value={forminput.budget} onChange={onChange}/></div>
-                    <div className="formelement__inputContainer"><textarea className="formelement__description" type='text' name="description" placeholder='Project description' value={forminput.description} onChange={onChange}/></div>
+                    <div className="formelement__inputContainer"><textarea className="formelement__description" type='text' name="description" placeholder='Project description' value={forminput.description} onChange={onChange} required/></div>
 
                 <Button type="primary">Hire Me</Button>
             </form>
