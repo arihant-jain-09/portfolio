@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Button from '../../components/Button/Button'
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import * as Scroll from 'react-scroll';
+import {ReactComponent as Logo} from '../../assets/aj_2.svg'
 import './Header.scss'
 const Header = () => {
     const Link=Scroll.Link;
@@ -11,7 +12,7 @@ const Header = () => {
         <div className='header'>
             <ul className="header__list header__list--left">
                 <li className="header__brand header__item">
-                    LOGO
+                    <Logo/>
                 </li>
             </ul>
             {width > 700 ? <ul className="header__list header__list--right">
