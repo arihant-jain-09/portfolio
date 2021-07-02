@@ -10,6 +10,15 @@
   @media screen and (max-width: 700px) {
     padding: 7rem 0;
   }
+  &__link {
+    a {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
   &__1 {
     grid-column: 1/-1;
     display: grid;
