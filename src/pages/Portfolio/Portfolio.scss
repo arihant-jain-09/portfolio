@@ -6,12 +6,74 @@
   grid-row: 5/6;
   padding: 7rem 0 25rem 0;
   display: grid;
-  grid-template-columns:
-    [portfolio-start] minmax(10rem, 1fr) [content-start first-end] repeat(
-      12,
-      [col-start] minmax(min-content, 10rem) [col-end]
-    )
-    [content-end] minmax(6rem, 1fr) [portfolio-end];
+  grid-template-columns: [left-start] 60vw [left-end right-start] 40vw [right-end];
+  @media screen and (max-width: 1150px) {
+    grid-column-gap: 8rem;
+    grid-template-columns: [left-start] 55vw [left-end right-start] 45vw [right-end];
+  }
+  @media screen and (max-width: 900px) {
+    grid-column-gap: 8rem;
+    grid-template-columns: [left-start] 56.6vw [left-end right-start] 43.4vw [right-end];
+  }
+  @media screen and (max-width: 700px) {
+    grid-template-columns: unset;
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 0;
+  }
+  &__left {
+    grid-column: left-start/left-end;
+    padding-bottom: 4rem;
+    grid-row: 2/3;
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-columns:
+      [portfolio-start] 10rem [content-start first-end] repeat(
+        5,
+        [col-start] minmax(min-content, 10rem) [col-end]
+      )
+      [content-end portfolio-end];
+    align-content: center;
+    @media screen and (max-width: 900px) {
+      padding-bottom: 2rem;
+    }
+    @media screen and (max-width: 700px) {
+      grid-template-columns:
+        [portfolio-start] 10rem [content-start first-end] repeat(
+          5,
+          [col-start] minmax(min-content, 10rem) [col-end]
+        )
+        [content-end] 6.5rem [portfolio-end];
+      padding-bottom: 4rem;
+    }
+    @media screen and (max-width: 500px) {
+      grid-template-columns:
+        [portfolio-start] 7rem [content-start first-end] repeat(
+          5,
+          [col-start] minmax(min-content, 10rem) [col-end]
+        )
+        [content-end] 7rem [portfolio-end];
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__right {
+    position: relative;
+    img {
+      // position: absolute;
+      // right: -10rem;
+      width: 100%;
+      height: 100%;
+    }
+    @media screen and (max-width: 700px) {
+      padding-left: 10rem;
+      width: 90%;
+      // align-self: center;
+    }
+    @media screen and (max-width: 500px) {
+      padding-left: 7rem;
+    }
+  }
 
   &__background {
     grid-column: full-start / full-end;
@@ -27,24 +89,24 @@
         fill: $tertiary-light-color;
       }
     }
-    &-image {
-      position: absolute;
-      bottom: 5%;
-      right: -10%;
-      background-image: url(../../assets/discord.png);
-      width: 50%;
-      height: 50%;
-      background-size: cover;
-      border-radius: 5px;
-      // box-shadow: -5px 5px 0px 0px $tertiary-light-color;
-      @media screen and (max-width: 1100px) {
-        width: 40%;
-      }
-    }
+    // &-image {
+    //   position: absolute;
+    //   bottom: 5%;
+    //   right: -10%;
+    //   background-image: url(../../assets/discord.png);
+    //   width: 50%;
+    //   height: 50%;
+    //   background-size: cover;
+    //   border-radius: 5px;
+    //   // box-shadow: -5px 5px 0px 0px $tertiary-light-color;
+    //   @media screen and (max-width: 1100px) {
+    //     width: 40%;
+    //   }
+    // }
   }
 
   &__section {
-    grid-column: content-start / content-end;
+    grid-column: left-start / right-end;
     padding-bottom: 10rem;
   }
   &-line {
@@ -68,6 +130,12 @@
     grid-column: col-start 1 / col-end 5;
     grid-row: 3/4;
     color: #fff;
+    @media screen and (max-width: 500px) {
+      font-size: 4rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 3.5rem;
+    }
   }
   &__paragraph {
     grid-column: col-start 1 / col-end 5;

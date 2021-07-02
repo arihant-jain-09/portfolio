@@ -21,7 +21,7 @@ const Skills = () => {
                     <div className="skills__name heading-5">NODEJS DEVELOPMENT</div>
                 </div>
                 <div className="skills__content">
-                    <div className="skills__name heading-5">NPM PACKAGES</div>
+                    <div className="skills__name heading-5">INTEGRATE PAYMENT</div>
                 </div>
                 <div className="skills__content">
                     <div className="skills__name heading-5">MONGODB DATABASE</div>
