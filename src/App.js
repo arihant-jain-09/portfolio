@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio/Portfolio'
 import SayHello from './pages/SayHello/SayHello'
 // import Testimonial from './pages/Testimonial/Testimonial'
 import Form from './pages/Form/Form'
+import Footer from './pages/Footer/Footer'
 function App() {
   return (
     <div className="app">
@@ -18,6 +19,7 @@ function App() {
         <SayHello/>
         {/* <Testimonial/> */}
         <Form />   
+        <Footer/>
     </div>
   );
 }

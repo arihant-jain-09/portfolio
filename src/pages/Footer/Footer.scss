@@ -1,0 +1,33 @@
+@import "../../styles/variables/variables";
+.footer {
+  grid-column: full-start / full-end;
+  grid-row: 9/10;
+  background-color: $primary-color;
+  color: rgba(#fff, 0.8);
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns:
+    [form-start] minmax(6rem, 1fr) [content-start first-end] repeat(
+      12,
+      [col-start] minmax(min-content, 10rem) [col-end]
+    )
+    [content-end] minmax(6rem, 1fr) [form-end];
+  &__icons {
+    grid-column: content-start / col-end 5;
+    display: flex;
+    align-items: flex-end;
+    &-icon {
+      svg {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__text {
+    grid-column: col-start 6 / content-end;
+  }
+}
