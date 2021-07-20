@@ -18,4 +18,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black&link=https://arihant-jain.tech/)](https://arihant-jain.tech/) 
 [![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white&link=https://arihant-jain.tech/)](https://arihant-jain.tech/) 
 [![SCSS](https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white&link=https://arihant-jain.tech/)](https://arihant-jain.tech/) 
-[![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat&logo=figma&logoColor=white&link=https://arihant-jain.tech/)](https://arihant-jain.tech/) 
+[![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat&logo=figma&logoColor=white&link=https://arihant-jain.tech/)](https://arihant-jain.tech/)
+[![Azure](https://img.shields.io/badge/Microsoft_Azure-0089D6?style=flat&logo=microsoft-azure&logoColor=white&link=https://arihant-jain.tech/)](https://arihant-jain.tech/) 
+
+
