@@ -35,12 +35,12 @@ const Portfolio = () => {
                     <div className="heading-1 portfolio__heading-1"><span className='u-color-primary'>BURGURLY</span> WEB </div>
                     <div className="paragraph portfolio__paragraph"><span className='u-color-primary-light'>Food Ordering</span> Web app for ordering food with customer and restaurant sides. Used technologies include React, NodeJS, MongoDB, React-Redux (Redux Saga), and SCSS (no external libraries).</div>
                     <div className="portfolio__icons">
-                        <div className="portfolio__icons-icon"><a target='_blank' rel='noreferrer' href="https://burgurly.azurewebsites.net/"><External/></a></div>
+                        <div className="portfolio__icons-icon"><a target='_blank' rel='noreferrer' href="https://burgurly.herokuapp.com/"><External/></a></div>
                         <div className="portfolio__icons-icon"><a target='_blank' rel='noreferrer' href="https://github.com/arihant-jain-09/burgurly"><Code/></a></div>
                     </div>
                 </div>
                 <div className="portfolio__2-left">
-                    <a target='_blank' rel="noreferrer"href="http://burgurly.azurewebsites.net/"><img src="burgurly.webp" alt="burgurly" /></a>
+                    <a target='_blank' rel="noreferrer"href="https://burgurly.herokuapp.com/"><img src="burgurly.webp" alt="burgurly" /></a>
                 </div>
             </div>
             <div className="portfolio__1">
