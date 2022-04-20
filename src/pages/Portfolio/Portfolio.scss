@@ -65,6 +65,7 @@
     display: grid;
     grid-template-columns: [left-start] 40vw [left-end right-start] 60vw [right-end];
     grid-column-gap: 10rem;
+    margin-bottom: 10rem;
     @media screen and (max-width: 1150px) {
       grid-template-columns: [left-start] 45vw [left-end right-start] 55vw [right-end];
       grid-column-gap: unset;

@@ -33,7 +33,7 @@ const Portfolio = () => {
                     <div className="portfolio-line"><Line/></div>
                     <div className="heading-4 portfolio__heading-4 u-color-primary"><span>PROJECT</span></div>
                     <div className="heading-1 portfolio__heading-1"><span className='u-color-primary'>BURGURLY</span> WEB </div>
-                    <div className="paragraph portfolio__paragraph"><span className='u-color-primary-light'>Food Ordering</span> Web App with Google Authentication, Payments, Food Search with suggestions, Persistent Cart, Eye catching UI, Multiple orders, Dashboard. Technologies used React, NodeJS, MongoDB, React Redux(Redux Saga), SCSS (no external library)</div>
+                    <div className="paragraph portfolio__paragraph"><span className='u-color-primary-light'>Food Ordering</span> Web app for ordering food with customer and restaurant sides. Used technologies include React, NodeJS, MongoDB, React-Redux (Redux Saga), and SCSS (no external libraries).</div>
                     <div className="portfolio__icons">
                         <div className="portfolio__icons-icon"><a target='_blank' rel='noreferrer' href="https://burgurly.azurewebsites.net/"><External/></a></div>
                         <div className="portfolio__icons-icon"><a target='_blank' rel='noreferrer' href="https://github.com/arihant-jain-09/burgurly"><Code/></a></div>
@@ -42,7 +42,23 @@ const Portfolio = () => {
                 <div className="portfolio__2-left">
                     <a target='_blank' rel="noreferrer"href="http://burgurly.azurewebsites.net/"><img src="burgurly.webp" alt="burgurly" /></a>
                 </div>
-            </div>     
+            </div>
+            <div className="portfolio__1">
+                <div className="portfolio__left">
+                    <div className="portfolio-line"><Line/></div>
+                    <div className="heading-4 portfolio__heading-4 u-color-primary"><span>PROJECT</span></div>
+                    <div className="heading-1 portfolio__heading-1"><span className='u-color-primary'>MAIL</span> BURST</div>
+                    <div className="paragraph portfolio__paragraph"><span className='u-color-primary-light'>Web App</span> for bulk email sending using SendGrid with a user dashboard, credit-based email sending, Google Authentication, and Stripe Payments.</div>
+                    <div className="portfolio__icons">
+                        <div className="portfolio__icons-icon"><a target='_blank' rel='noreferrer' href="https://mailburstapp.herokuapp.com/"><External/></a></div>
+                        <div className="portfolio__icons-icon"><a target='_blank' rel='noreferrer' href="https://github.com/arihant-jain-09/Mailburst"><Code/></a></div>
+                    </div>
+                </div>
+                <div className="portfolio__right">
+                    <a target='_blank' rel="noreferrer"href="https://mailburstapp.herokuapp.com/"><img src="/mail_burst.webp" alt="mail_burst" /></a>
+                    
+                </div>
+            </div>      
         </div>
         </>
     )
